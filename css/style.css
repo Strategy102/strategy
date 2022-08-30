@@ -59,18 +59,6 @@ body{
     padding-left: 35rem;
 }
 
-body.active{
-    /* --white: #fff; */
-    --black: #222;
-    --light-color: #e6e6e6;
-    --bg-color: #fff;
-    --border: .1rem solid rgba(0,0,0,.4);
-    --box-shadow:.4rem .4rem .1rem #ccc,
-                -.4rem .4rem .1rem #fff;
-    --box-shadow-inset:.4rem .4rem .1rem #ccc inset,
-            -.4rem .4rem .1rem #fff inset;
-}
-
 section{
     min-height: 100vh;
     padding: 1rem;
@@ -176,27 +164,6 @@ header .navbar ul li a:hover{
     padding: 1rem 1.5rem;
     z-index: 1000;
     display: none;
-}
-
-#theme-toggler{
-    position: fixed;
-    top: 1.5rem;
-    right: 2rem;
-    z-index: 1000;
-    height: 5rem;
-    width: 5rem;
-    line-height: 5rem;
-    border-radius: 50%;
-    font-size: 2rem;
-    cursor: pointer;
-    box-shadow: var(--box-shadow);
-    text-align: center;
-    color: var(--white);
-}
-
-#theme-toggler:hover{
-    color: var(--yellow);
-    box-shadow: var(--box-shadow-inset);
 }
 
 .home{

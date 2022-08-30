@@ -35,11 +35,10 @@
 
     <div id="menu" class="fas fa-bars"></div>
 
-    <!-- <div id="theme-toggler" class="fas fa-sun"></div> -->
 
 <section class="home" id="home">
     <h3>HI THERE !</h3>
-    <h1>I'M <span>Strategy</span></h1>
+    <h1>I'M <span>Strategy (Web Doctor)</span></h1>
     <p>I am a web Developer, and I'm very perssionate and dedicated to my work, 
         with 6 months experiences as a professionl web developer. I have acquired 
         the skill and knowledge necessary to make your project a sucess. Am also
@@ -278,7 +277,12 @@
         onload="if(submitted){window.location='https://strategyportfolio.netlify.app/'}">
         </iframe>
         <!-- redirect user to your website after submitting to google sheet end -->
-        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeaCvySK7EXs9JeOPKs_0ibpnywy5TelTkT3w3h8QB157QyDw/formResponse">
+        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeaCvySK7EXs9JeOPKs_0ibpnywy5TelTkT3w3h8QB157QyDw/formResponse"
+        method="POST" 
+            target="hidden_iframe" 
+            onsubmit="submitted=true"
+            class="contact__form">
+            
             <input type="text" placeholder="name" class="box" name="entry.669115121">
             <input type="email" placeholder="email" class="box" name="entry.271701456">
             <input type="text" placeholder="project" class="box" name="entry.676544175">
@@ -297,7 +301,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- ustom js file link -->
     <script src="js/script.js"></script>
-    <script src="js/style.js"></script>
     <!-- typed -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
 </body>
