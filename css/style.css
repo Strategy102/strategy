@@ -476,8 +476,14 @@ header .navbar ul li a:hover{
     -webkit-transform: translate(0px);
     transform: translate(0px);
 }
-.icon.bx {
+.link{
+    border-radius: 7rem;
+    
+}
+.portfolio .box-container .icon.bx {
     line-height: 40px;
+    color: red;
+    position: absolute;
 }
 
 .contact .row{
