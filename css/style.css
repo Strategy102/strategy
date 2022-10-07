@@ -435,6 +435,57 @@ header .navbar ul li a:hover{
 }
 
 .portfolio .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 2rem;
+}
+
+.portfolio .box-container .box{
+    height: 25rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+    position: relative;
+    border: 1rem solid transparent;
+}
+
+.portfolio .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.portfolio .box-container .box .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--bg-color);
+    display: grid;
+    place-items: center;
+    transform: scale(0);
+}
+
+.portfolio .box-container .box:hover .content{
+    transform: scale(1);
+}
+
+.portfolio .box-container .box .content h3{
+    font-size: 2.5rem;
+    color: var(--black);
+    text-transform: uppercase;
+    transform: translateY(-5rem);
+    opacity: 0;
+    transition-delay: .3s;
+}
+
+.portfolio .box-container .box:hover .content h3{
+    transform: translateY(0rem);
+    opacity: 1;
+}
+
+/* .portfolio .box-container{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -484,7 +535,7 @@ header .navbar ul li a:hover{
     line-height: 40px;
     color: red;
     position: absolute;
-}
+} */
 
 .contact .row{
     display: flex;
